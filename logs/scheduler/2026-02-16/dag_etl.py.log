@@ -866,3 +866,45 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'tasks'
 [2026-02-16T16:48:22.388+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
 [2026-02-16T16:48:22.396+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.017 seconds
+[2026-02-16T16:48:52.706+0000] {processor.py:186} INFO - Started process (PID=601) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T16:48:52.706+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T16:48:52.709+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:48:52.709+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T16:48:52.715+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:48:52.714+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+ModuleNotFoundError: No module named 'tasks'
+[2026-02-16T16:48:52.715+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T16:48:52.725+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.023 seconds
+[2026-02-16T16:49:23.007+0000] {processor.py:186} INFO - Started process (PID=609) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T16:49:23.008+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T16:49:23.009+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:49:23.009+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T16:49:23.016+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:49:23.015+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+ModuleNotFoundError: No module named 'tasks'
+[2026-02-16T16:49:23.017+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T16:49:23.032+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.033 seconds
+[2026-02-16T16:49:53.329+0000] {processor.py:186} INFO - Started process (PID=617) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T16:49:53.330+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T16:49:53.332+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:49:53.332+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T16:49:53.338+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:49:53.337+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+ModuleNotFoundError: No module named 'tasks'
+[2026-02-16T16:49:53.338+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T16:49:53.349+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.025 seconds
