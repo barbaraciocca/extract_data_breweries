@@ -1,7 +1,7 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-from tasks.extract import fetch_breweries
+from tasks.extract import breweries_to_bronze
 
 default_args = {
     'start_date': datetime(2026, 1, 1),
