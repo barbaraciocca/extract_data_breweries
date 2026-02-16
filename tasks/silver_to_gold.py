@@ -1,15 +1,8 @@
-# tasks/transform.py
-
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 import pandas as pd
 from io import BytesIO
 
-
 def silver_to_gold():
-    """
-    Lê todos os Parquet do bucket silver, agrega por state e brewery_type,
-    e salva no bucket gold.
-    """
     hook = S3Hook(aws_conn_id="MINIO_S3")
     silver_bucket = "silver"
     gold_bucket = "gold"
@@ -22,15 +15,18 @@ def silver_to_gold():
         return
 
     frames = []
+    print(frames)
     for key in keys:
-        parquet_bytes = hook.read_key(key, bucket_name=silver_bucket, binary=True)
-        df = pd.read_parquet(BytesIO(parquet_bytes))
+        # Pega o objeto como bytes (não string)
+        obj = hook.get_key(key, bucket_name=silver_bucket)
+        parquet_bytes = BytesIO(obj.get()['Body'].read())
+        df = pd.read_parquet(parquet_bytes)
         frames.append(df)
 
     full_df = pd.concat(frames, ignore_index=True)
 
     agg_df = full_df.groupby(['state', 'brewery_type']).size().reset_index(name='count')
-
+    print(agg_df)
     buffer = BytesIO()
     agg_df.to_parquet(buffer, index=False)
     buffer.seek(0)

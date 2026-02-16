@@ -1,11 +1,13 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-from tasks.extract import breweries_to_bronze, bronze_to_silver, silver_to_gold
+from tasks.api_to_bronze import breweries_to_bronze
+from tasks.bronze_to_silver import bronze_to_silver
+from tasks.silver_to_gold import silver_to_gold
 
 
 with DAG(
-    dag_id="breweries_data_lake",
+    dag_id="ETL-breweries",
     start_date=datetime(2024, 1, 1),
     schedule_interval="@daily",
     catchup=False
