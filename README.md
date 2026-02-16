@@ -47,3 +47,12 @@ This repository contains an ETL pipeline that extracts brewery data from the Ope
 ## Monitoring
 
 - Task failures and data quality checks are logged and can trigger alerts via Airflow.
+
+## Design Choices & Trade-offs
+
+- **Airflow** was chosen for orchestration due to its robust scheduling and monitoring, though it requires more setup than simpler tools.
+- **MinIO** provides S3-compatible local storage, enabling easy development without cloud costs.
+- **Docker** ensures reproducibility and easy setup.
+- **Data quality and Error handling** uses Airflow callbacks and logging; alerting can be extended as needed.
+
+These choices balance simplicity, scalability, and ease of use for local
