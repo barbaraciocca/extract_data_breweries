@@ -16,5 +16,6 @@ with DAG(
 ) as dag:
 
     extract_task = PythonOperator(
-        task_id='fetch_breweries',
+        task_id='breweries_to_bronze',
         python_callable=fetch_breweries
+    )
