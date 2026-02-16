@@ -1,0 +1,590 @@
+[2026-02-16T18:03:07.364+0000] {processor.py:186} INFO - Started process (PID=32) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:03:07.364+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:03:07.365+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:03:07.365+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:03:08.183+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:03:08.182+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:03:08.184+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:03:08.192+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.832 seconds
+[2026-02-16T18:03:38.966+0000] {processor.py:186} INFO - Started process (PID=35) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:03:38.968+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:03:38.970+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:03:38.970+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:03:39.212+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:03:39.211+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:03:39.212+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:03:39.218+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.257 seconds
+[2026-02-16T18:04:09.405+0000] {processor.py:186} INFO - Started process (PID=38) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:04:09.406+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:04:09.407+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:04:09.407+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:04:09.587+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:04:09.586+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:04:09.587+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:04:09.592+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.194 seconds
+[2026-02-16T18:04:39.788+0000] {processor.py:186} INFO - Started process (PID=41) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:04:39.789+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:04:39.791+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:04:39.791+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:04:39.970+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:04:39.970+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:04:39.971+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:04:39.976+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.193 seconds
+[2026-02-16T18:05:10.237+0000] {processor.py:186} INFO - Started process (PID=44) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:05:10.238+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:05:10.240+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:05:10.240+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:05:10.415+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:05:10.414+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:05:10.415+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:05:10.420+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.189 seconds
+[2026-02-16T18:05:40.529+0000] {processor.py:186} INFO - Started process (PID=47) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:05:40.529+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:05:40.532+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:05:40.532+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:05:40.713+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:05:40.712+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:05:40.713+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:05:40.718+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.195 seconds
+[2026-02-16T18:06:10.905+0000] {processor.py:186} INFO - Started process (PID=50) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:06:10.906+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:06:10.907+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:06:10.907+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:06:11.074+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:06:11.073+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:06:11.074+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:06:11.080+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.177 seconds
+[2026-02-16T18:06:41.377+0000] {processor.py:186} INFO - Started process (PID=53) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:06:41.378+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:06:41.380+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:06:41.380+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:06:41.561+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:06:41.560+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:06:41.561+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:06:41.567+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.199 seconds
+[2026-02-16T18:07:11.720+0000] {processor.py:186} INFO - Started process (PID=56) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:07:11.721+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:07:11.723+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:07:11.723+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:07:11.942+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:07:11.941+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:07:11.942+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:07:11.948+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.235 seconds
+[2026-02-16T18:07:42.149+0000] {processor.py:186} INFO - Started process (PID=59) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:07:42.150+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:07:42.152+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:07:42.151+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:07:42.346+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:07:42.344+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:07:42.346+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:07:42.355+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.212 seconds
+[2026-02-16T18:08:08.024+0000] {processor.py:186} INFO - Started process (PID=31) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:08:08.024+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:08:08.026+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:08:08.026+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:08:08.933+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:08:08.931+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:08:08.933+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:08:08.942+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.924 seconds
+[2026-02-16T18:08:39.650+0000] {processor.py:186} INFO - Started process (PID=34) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:08:39.651+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:08:39.653+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:08:39.653+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:08:39.843+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:08:39.842+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:08:39.843+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:08:39.848+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.204 seconds
+[2026-02-16T18:09:10.120+0000] {processor.py:186} INFO - Started process (PID=37) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:09:10.121+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:09:10.122+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:09:10.122+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:09:10.350+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:09:10.349+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:09:10.351+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:09:10.356+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.240 seconds
+[2026-02-16T18:09:40.504+0000] {processor.py:186} INFO - Started process (PID=40) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:09:40.505+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:09:40.508+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:09:40.508+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:09:40.688+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:09:40.687+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:09:40.688+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:09:40.693+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.196 seconds
+[2026-02-16T18:10:10.926+0000] {processor.py:186} INFO - Started process (PID=43) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:10:10.927+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:10:10.928+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:10:10.928+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:10:11.112+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:10:11.111+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:10:11.113+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:10:11.118+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.194 seconds
+[2026-02-16T18:10:41.370+0000] {processor.py:186} INFO - Started process (PID=46) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:10:41.371+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:10:41.374+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:10:41.373+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:10:41.575+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:10:41.574+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:10:41.575+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:10:41.581+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.220 seconds
+[2026-02-16T18:11:11.754+0000] {processor.py:186} INFO - Started process (PID=49) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:11:11.755+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:11:11.756+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:11:11.756+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:11:11.949+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:11:11.948+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:11:11.949+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:11:11.955+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.206 seconds
+[2026-02-16T18:11:42.242+0000] {processor.py:186} INFO - Started process (PID=52) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:11:42.243+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:11:42.245+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:11:42.244+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:11:42.427+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:11:42.427+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:11:42.428+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:11:42.433+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.199 seconds
+[2026-02-16T18:12:12.731+0000] {processor.py:186} INFO - Started process (PID=55) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:12:12.732+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:12:12.733+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:12:12.733+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:12:12.912+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:12:12.911+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:12:12.912+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:12:12.917+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.189 seconds
+[2026-02-16T18:12:43.205+0000] {processor.py:186} INFO - Started process (PID=58) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:12:43.206+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:12:43.208+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:12:43.208+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:12:43.416+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:12:43.415+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:12:43.416+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:12:43.422+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.223 seconds
+[2026-02-16T18:13:13.714+0000] {processor.py:186} INFO - Started process (PID=61) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:13:13.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:13:13.718+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:13:13.718+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:13:13.923+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:13:13.922+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:13:13.923+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:13:13.929+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.220 seconds
+[2026-02-16T18:13:44.207+0000] {processor.py:186} INFO - Started process (PID=64) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:13:44.208+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:13:44.209+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:13:44.209+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:13:44.399+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:13:44.398+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:13:44.399+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:13:44.405+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.203 seconds
+[2026-02-16T18:14:14.702+0000] {processor.py:186} INFO - Started process (PID=67) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:14:14.703+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:14:14.705+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:14:14.705+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:14:14.918+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:14:14.917+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:14:14.918+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:14:14.923+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.228 seconds
+[2026-02-16T18:14:45.020+0000] {processor.py:186} INFO - Started process (PID=70) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:14:45.021+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:14:45.023+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:14:45.023+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:14:45.201+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:14:45.200+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:14:45.201+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:14:45.207+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.194 seconds
+[2026-02-16T18:15:15.459+0000] {processor.py:186} INFO - Started process (PID=73) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:15:15.460+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:15:15.462+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:15:15.462+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:15:15.640+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:15:15.639+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:15:15.640+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:15:15.645+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.192 seconds
+[2026-02-16T18:15:45.924+0000] {processor.py:186} INFO - Started process (PID=76) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:15:45.925+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:15:45.927+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:15:45.927+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:15:46.112+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:15:46.111+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:15:46.112+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:15:46.117+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.200 seconds
+[2026-02-16T18:16:16.388+0000] {processor.py:186} INFO - Started process (PID=79) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:16:16.389+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:16:16.391+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:16:16.391+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:16:16.583+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:16:16.582+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:16:16.583+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:16:16.588+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.206 seconds
+[2026-02-16T18:16:46.839+0000] {processor.py:186} INFO - Started process (PID=82) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:16:46.840+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:16:46.843+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:16:46.842+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:16:47.023+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:16:47.022+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:16:47.023+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:16:47.028+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.195 seconds
+[2026-02-16T18:17:17.307+0000] {processor.py:186} INFO - Started process (PID=85) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:17:17.308+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:17:17.310+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:17:17.310+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:17:17.482+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:17:17.481+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:17:17.482+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:17:17.487+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.184 seconds
+[2026-02-16T18:17:47.597+0000] {processor.py:186} INFO - Started process (PID=88) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:17:47.598+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:17:47.600+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:17:47.599+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:17:47.772+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:17:47.771+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:17:47.772+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:17:47.778+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.186 seconds
+[2026-02-16T18:18:18.088+0000] {processor.py:186} INFO - Started process (PID=91) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:18:18.088+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:18:18.090+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:18:18.090+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:18:18.278+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:18:18.277+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:18:18.278+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:18:18.284+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.202 seconds
+[2026-02-16T18:18:48.593+0000] {processor.py:186} INFO - Started process (PID=94) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:18:48.594+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:18:48.596+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:18:48.595+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:18:48.777+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:18:48.776+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:18:48.777+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:18:48.783+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.197 seconds
+[2026-02-16T18:19:19.057+0000] {processor.py:186} INFO - Started process (PID=97) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:19:19.058+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:19:19.060+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:19:19.060+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:19:19.270+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:19:19.269+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:19:19.270+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:19:19.276+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.225 seconds
+[2026-02-16T18:19:49.515+0000] {processor.py:186} INFO - Started process (PID=100) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:19:49.516+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:19:49.518+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:19:49.518+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:19:49.720+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:19:49.719+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:19:49.720+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:19:49.726+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.219 seconds
+[2026-02-16T18:20:19.859+0000] {processor.py:186} INFO - Started process (PID=103) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:20:19.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:20:19.863+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:20:19.862+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:20:20.055+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:20:20.055+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:20:20.056+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:20:20.061+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.209 seconds
+[2026-02-16T18:20:50.177+0000] {processor.py:186} INFO - Started process (PID=106) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:20:50.177+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:20:50.178+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:20:50.178+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:20:50.378+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:20:50.377+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+  File "/opt/airflow/tasks/ingest_raw_task.py", line 3, in <module>
+    from utils.params import CONN_ID, RAW_SCHEMA, CLEAN_SCHEMA, RAW_TABLE_METAS, CLEAN_TABLE_FUNNEL, RAW_FUNNEL_CSV, RAW_METAS_CSV, RAW_TABLE_FUNNEL
+ModuleNotFoundError: No module named 'utils'
+[2026-02-16T18:20:50.378+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:20:50.385+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.212 seconds
+[2026-02-16T18:21:20.475+0000] {processor.py:186} INFO - Started process (PID=109) to work on /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:21:20.476+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_etl.py for tasks to queue
+[2026-02-16T18:21:20.476+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:21:20.476+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:21:20.479+0000] {logging_mixin.py:190} INFO - [2026-02-16T18:21:20.479+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dag_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_etl.py", line 5, in <module>
+    from tasks.ingest_raw_task import pipeline_funnel_raw_to_clean, pipeline_metas_raw
+ModuleNotFoundError: No module named 'tasks.ingest_raw_task'
+[2026-02-16T18:21:20.480+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_etl.py
+[2026-02-16T18:21:20.491+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_etl.py took 0.020 seconds
