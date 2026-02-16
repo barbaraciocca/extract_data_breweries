@@ -1,6 +1,6 @@
 import requests
 
-def fetch_breweries():
+def breweries_to_bronze():
     """
     Fetches brewery data from the Open Brewery DB API.
     Returns:
