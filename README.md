@@ -44,6 +44,12 @@ This repository contains an ETL pipeline that extracts brewery data from the Ope
 6. **Turn on the DAG**
     - In the Airflow webserver, enable the DAG `ETL-breweries` to start
 
+## Jupyter Notebooks
+
+This project includes two Jupyter notebooks for data exploration and validation:
+### 1. GOLD Table Exploration
+### 2. SILVER Tables Validation
+
 ## Monitoring
 
 - Task failures and data quality checks are logged and can trigger alerts via Airflow.
@@ -54,5 +60,3 @@ This repository contains an ETL pipeline that extracts brewery data from the Ope
 - **MinIO** provides S3-compatible local storage, enabling easy development without cloud costs.
 - **Docker** ensures reproducibility and easy setup.
 - **Data quality and Error handling** uses Airflow callbacks and logging; alerting can be extended as needed.
-
-These choices balance simplicity, scalability, and ease of use for local
