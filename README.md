@@ -1,9 +1,5 @@
 # Breweries ETL Pipeline
 
-## Overview
-
-This repository contains an ETL pipeline that extracts brewery data from the Open Brewery DB API, processes it through bronze, silver, and gold layers, and stores results in MinIO using Apache Airflow.
-
 ## Layers
 
 - **Bronze:** Raw JSON data from API.
