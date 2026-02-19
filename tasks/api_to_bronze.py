@@ -22,7 +22,7 @@ def breweries_to_bronze(state=None, brewery_type=None):
         hook.create_bucket(bucket_name=bucket_name)
 
     page = 1
-    per_page = 200  # maximum allowed by the API
+    per_page = 200
     all_data = []
 
     while True:
@@ -47,7 +47,7 @@ def breweries_to_bronze(state=None, brewery_type=None):
         all_data.extend(data)
         page += 1
 
-    # Data quality check: Ensure all_data is not empty
+    # Ensure all_data is not empty
     if not all_data:
         logger.error("No data returned from API.")
         raise ValueError("No data returned from API.")

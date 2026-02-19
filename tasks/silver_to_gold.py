@@ -13,7 +13,7 @@ def silver_to_gold():
     silver_bucket = "silver"
     gold_bucket = "gold"
 
-    # Create gold bucket if it does not exist
+    # Create bucket if it does not exist
     if not hook.check_for_bucket(gold_bucket):
         logger.info(f"Bucket {gold_bucket} does not exist. Creating...")
         hook.create_bucket(bucket_name=gold_bucket)
@@ -36,14 +36,14 @@ def silver_to_gold():
             logger.error(f"Error reading/parquet file {key}: {e}")
             raise
 
-    # Data quality check: Ensure frames is not empty
+    # Ensure DataFrames is not empty
     if not frames:
         logger.error("No DataFrames loaded from silver bucket files.")
         raise ValueError("No DataFrames loaded.")
 
     full_df = pd.concat(frames, ignore_index=True)
 
-    # Data quality check: Ensure full_df is not empty
+    # Ensure full_df is not empty
     if full_df.empty:
         logger.error("Final DataFrame is empty after concatenation.")
         raise ValueError("Final DataFrame is empty.")

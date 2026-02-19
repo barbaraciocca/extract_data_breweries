@@ -1,3 +1,16 @@
+"""
+Airflow DAG for the ETL pipeline of brewery data.
+
+This DAG runs daily (when turned on) and orchestrates three steps:
+1. Extracts brewery data from an external API to the bronze bucket.
+2. Partitions the data by state, saving data as Parquet files in the silver bucket.
+3. Aggregates brewery counts by state and type, saving the result as a Parquet file in the gold bucket.
+
+All data is stored in MinIO.
+Each step is a Python task. Failures are logged via a callback.
+Task order: bronze_layer → silver_layer → gold_layer.
+"""
+
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
@@ -7,8 +20,7 @@ from tasks.silver_to_gold import silver_to_gold
 
 def failure_callback(context):
     """
-    Callback function for task failure.
-    Logs the error and can be extended to send alerts (email, Slack, etc.).
+    Callback function for task failure, and logs the error.
     """
     task_instance = context.get('task_instance')
     dag_id = context.get('dag').dag_id

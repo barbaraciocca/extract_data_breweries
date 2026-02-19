@@ -14,12 +14,11 @@ def bronze_to_silver():
     bronze_bucket = "bronze"
     silver_bucket = "silver"
 
-    # Create silver bucket if it does not exist
+    # Create bucket if it does not exist
     if not hook.check_for_bucket(silver_bucket):
         logger.info(f"Bucket {silver_bucket} does not exist. Creating...")
         hook.create_bucket(bucket_name=silver_bucket)
 
-    # List files in bronze bucket
     keys = hook.list_keys(bucket_name=bronze_bucket)
     if not keys:
         logger.warning("No files found in bronze bucket.")
@@ -27,14 +26,13 @@ def bronze_to_silver():
 
     for key in keys:
         try:
-            # Read JSON from MinIO
             json_data = hook.read_key(key, bucket_name=bronze_bucket)
             df = pd.read_json(json_data)
 
-            # Drop rows with missing state or city (optional for data quality)
+            # Drop rows with missing state
             df = df.dropna(subset=['state', 'city'])
 
-            # Data quality check: Ensure DataFrame is not empty
+            # Ensure DataFrame is not empty
             if df.empty:
                 logger.error(f"Empty DataFrame after cleaning for file {key}.")
                 raise ValueError(f"Empty DataFrame for {key}")
