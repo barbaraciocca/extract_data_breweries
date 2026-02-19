@@ -47,8 +47,8 @@ This repository contains an ETL pipeline that extracts brewery data from the Ope
 ## Jupyter Notebooks
 
 This project includes two Jupyter notebooks for data exploration and validation:
-### 1. GOLD Table Exploration
-### 2. SILVER Tables Validation
+1. **File:** `nb_GOLD_TABLE_EXPLORATION.ipynb`
+2. **File:** `nb_SILVER_TABLES_VALIDATION.ipynb`
 
 ## Monitoring
 
